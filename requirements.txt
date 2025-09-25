@@ -1,6 +1,6 @@
 gradio==4.44.1
 fastai>=2.8.0
-fasttransform>=0.1.0
+fasttransform==0.0.2
 torch==2.2.2+cpu
 torchvision==0.17.2+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
