@@ -4,7 +4,7 @@ import gradio as gr, os
 
 # (No custom helpers used in your UAV training pipeline)
 
-REPO_ID  = "karmix96/uav_subtypes"          # <-- put your actual model repo
+REPO_ID  = "karmix96/uav_classification_model"          # <-- put your actual model repo
 FILENAME = "uav_classification_model.pkl"   # <-- exact filename in that repo
 
 # define token BEFORE using it
