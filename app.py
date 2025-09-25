@@ -27,12 +27,10 @@ demo = gr.Interface(
     outputs=gr.Label(num_top_classes=min(5, len(labels)), label="Prediction"),
     title="UAV Classifier (fastai)",
     description=f"Classes: {', '.join(labels)}",
-    examples=[
-        "examples/multirotor1.jpg",
-        "examples/fixedwing1.jpg",
-    ],
     allow_flagging="never",
+    cache_examples=False,   
 )
+
 
 
 if __name__ == "__main__":
