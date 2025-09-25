@@ -1,14 +1,12 @@
 ---
-title: Uav Classifier App
-emoji: 🐠
-colorFrom: pink
-colorTo: indigo
+title: UAV Classifier (fastai · Gradio)
+emoji: ✈️
+colorFrom: indigo
+colorTo: blue
 sdk: gradio
-sdk_version: 5.47.1
+sdk_version: "4.44.1"
+python_version: 3.11
 app_file: app.py
 pinned: false
-license: apache-2.0
-short_description: An app to classify drones into multirotor or fixed-wing
 ---
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+Gradio app loading a fastai `Learner` from the Hugging Face Hub.
