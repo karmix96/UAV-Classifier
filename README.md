@@ -2,6 +2,12 @@
 
 Binary UAV image classifier (Multirotor vs Fixed-wing). Training in fastai; served with Gradio.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+[![HF Space](https://img.shields.io/badge/🤗%20Space-online-ffcc4d)](https://huggingface.co/spaces/karmix96/uav_classifier_app)
+[![Kaggle Notebook](https://img.shields.io/badge/Kaggle-notebook-20beff)](https://www.kaggle.com/code/michailkaralis/uav-classification)
+
+
 ## Demo
 - **Hugging Face Space:** <https://huggingface.co/spaces/karmix96/uav_classifier_app>
 - **Kaggle Notebook:** <https://www.kaggle.com/code/michailkaralis/uav-classification>
