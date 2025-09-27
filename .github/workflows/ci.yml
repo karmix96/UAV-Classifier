@@ -1,0 +1,33 @@
+﻿name: CI
+on:
+push:
+pull_request:
+
+jobs:
+smoke:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- uses: actions/setup-python@v5
+with:
+python-version: '3.11'
+- name: Install app deps
+run: |
+python -m pip install --upgrade pip
+pip install -r app/requirements.txt
+- name: Import checks
+run: |
+python - << 'PY'
+from pathlib import Path
+import importlib
+
+# just verify app imports
+spec_ok = True
+try:
+import gradio
+from fastai.vision.all import load_learner
+except Exception as e:
+raise SystemExit(e)
+print("Imports OK")
+PY
+
